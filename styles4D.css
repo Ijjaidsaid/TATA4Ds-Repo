@@ -256,7 +256,7 @@ section{
 }
 .réalisation-card{
     flex: 1; /* Each card will take equal space */
-    margin: 3px; /* Optional: Adds space between cards */
+    margin: 2.5px; /* Optional: Adds space between cards */
     box-sizing: border-box;
     background-color: aliceblue;
     border: 1px solid #fff;
