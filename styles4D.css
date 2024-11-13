@@ -134,7 +134,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(kmarti/BG1.jpeg) no-repeat;
+    background: url(tata4dpics/BG1.jpeg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -207,15 +207,18 @@ section{
 }
 
 .card{
+    width: calc(25% - 10px); /* Par défaut, 4 colonnes */
+    box-sizing: border-box;
     background-color: white;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1/15%);
     border-radius: 10px;
     padding: 25px;/*katfrq fldakhl dyal lelement lktba wlcadre*/
-    margin: 15px; /*bach tfrq bin 2 elems*/
+    margin: 30px; /*bach tfrq bin 2 elems*/
     transition: 0.7s ease;
     
 }
+
 .card:hover{
     transform: scale(1.1);
 }
@@ -253,14 +256,14 @@ section{
 }
 .réalisation-card{
     flex: 1; /* Each card will take equal space */
-    margin: 10px; /* Optional: Adds space between cards */
+    margin: 3px; /* Optional: Adds space between cards */
+    box-sizing: border-box;
     background-color: aliceblue;
     border: 1px solid #fff;
     min-height: 14em;/*ILA madernach min wzdna chihaja aywq3liha over flow atkhrj mn litar y3ni iqder izid */
     width: 23em;
     overflow: hidden;
     border-radius: 10px;
-    margin: 20px;
     transition: 0.7s ease;
     
 
@@ -367,9 +370,10 @@ section{
 .secteur-item {
     width: calc(25% - 10px); /* Ajuste la largeur des images pour occuper 4 colonnes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 30px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .secteur-item img {
@@ -390,26 +394,25 @@ section{
 
 
 /* Styles pour rendre la section responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     .secteur-item {
-        width: calc(33.33% - 10px); /* 3 colonnes */
+        width: calc(25% - 10px); /* 4 colonnes */
     }
-    
 }
 
 @media (max-width: 900px) {
     .secteur-item {
         width: calc(50% - 10px); /* 2 colonnes */
     }
-    
 }
 
 @media (max-width: 600px) {
     .secteur-item {
         width: 100%; /* 1 colonne */
     }
-    
 }
+
+
 
 /*sghi*/
 /* Container */
