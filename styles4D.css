@@ -125,7 +125,7 @@ section{
     /*padding: 100px 200px;*/
 }
 
-.main{
+/* .main{
     margin-bottom: 30px;
     position: relative;
     padding: 20px;
@@ -138,7 +138,20 @@ section{
     background-attachment: fixed;
     background-position: center;
 
+}*/
+.main {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(tata4dpics/BG.jpeg) no-repeat center center;
+    background-size: cover; /* Assure que l'image couvre toute la zone */
+    background-attachment: fixed; /* Garder l'image fixe quand on scrolle */
 }
+
 
 .main h2{
     color: rgb(41, 41, 37);
