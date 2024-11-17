@@ -14,6 +14,10 @@
     top: 0;
     left: 0;
     z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Assure que l'image couvre toute la zone */
+    background-attachment: fixed; /* Garder l'image fixe quand on scrolle */
     
 }
 
