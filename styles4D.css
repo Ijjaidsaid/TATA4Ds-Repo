@@ -157,7 +157,7 @@ section{
     align-items: center;
     background: url(tata4dpics/BG.jpeg) no-repeat center center;
     background-size: cover; /* Assure que l'image couvre toute la zone */
-    background-attachment: scroll; /* Garder l'image fixe quand on scrolle */
+    background-attachment: fixed; /* Garder l'image fixe quand on scrolle */
 }
 
 
@@ -401,6 +401,14 @@ section{
         background-color: rgba(0, 0, 0, 0.05); /* Couleur de fond au survol */
     }
 }
+@supports (-webkit-touch-callout: none) {
+    .main {
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
 /*mnghi*/
 .secteurs {
     margin-top: 20px;
