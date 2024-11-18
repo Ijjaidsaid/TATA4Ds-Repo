@@ -114,12 +114,6 @@ body {
     color: white;
 }
 .stats-content h1 {
-    /*display: flex;
-    white-space: nowrap;
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-    left: 0;*/
             position: absolute;
             top: 20px; /* Ajustez cette valeur selon vos besoins */
             left: 50%;
@@ -184,20 +178,6 @@ section{
     /*padding: 100px 200px;*/
 }
 
-/* .main{
-    margin-bottom: 30px;
-    position: relative;
-    padding: 20px;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(tata4dpics/BG.jpeg) no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center;
-
-}*/
 .navigation {
     display: flex;
     gap: 15px;
