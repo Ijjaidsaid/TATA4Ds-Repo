@@ -418,14 +418,33 @@ section{
 .footer-title{
     font-size: 1.3em;
     font-weight: 600;
-    text-align: left;
+    
+    
 }
 .footer-title span /*had span kna drnaha bach nqdo nbdlo style ta3 wahd lklma bin jomla*/{
     color: aqua;
 }
 .footer .social-icons a{
     font-size: 1.3em;
+    
 }
+/* Styles pour téléphone */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Passer en colonne pour un affichage vertical */
+        text-align: center;
+    }
+
+    .footer-title {
+        margin-bottom: 10px; /* Espace entre le texte et les icônes */
+    }
+
+    .footer .social-icons {
+        justify-content: center; /* Centrer les icônes */
+    }
+}
+
+
 @media (max-width:1023px){
     header{
         padding: 12px 20px;
@@ -450,20 +469,7 @@ section{
         align-items: center;
     }
 }
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column; /* Passer en colonne pour un affichage vertical */
-        text-align: center;
-    }
 
-    .footer-title {
-        margin-bottom: 10px; /* Espace entre le texte et les icônes */
-    }
-
-    .footer .social-icons {
-        justify-content: center; /* Centrer les icônes */
-    }
-}
 @media (max-width: 768px) {
     .navigation {
         display: none;
@@ -623,4 +629,40 @@ section{
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Slight shadow on hover */
   }
 
-  
+  /*reduire la taille du menu*/
+
+  @media (max-width: 768px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-height: fit-content; /* Ajuste la hauteur au contenu */
+        width: 250px;
+        padding-top: 60px;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.2);
+        border-right: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navigation a {
+        padding: 10px 20px;
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation a:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
