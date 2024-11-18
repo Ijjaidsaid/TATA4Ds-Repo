@@ -1,4 +1,59 @@
 
+/* Existing Styles */
+* {
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.advantages {
+    text-align: center;
+    margin: 20px;
+}
+.advantages h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.advantage-item {
+    display: inline-block;
+    width: 30%; /* Adjusts to 100% on smaller screens in media query */
+    margin: 20px 10px;
+    vertical-align: top;
+    text-align: left;
+}
+.advantage-item i {
+    color: #7b37d4; /* Gold color */
+    font-size: 24px;
+    margin-right: 10px;
+}
+.advantage-item h3 {
+    display: inline;
+    font-size: 1.2em;
+    margin: 0;
+}
+.advantage-item p {
+    margin-top: 10px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .advantage-item {
+        width: 90%; /* Adjusts width to fill screen width on mobile */
+        margin: 10px auto; /* Centers each item */
+        text-align: center; /* Centers text on mobile */
+    }
+    .advantages h1 {
+        font-size: 1.5em; /* Smaller font size for title on mobile */
+    }
+    .advantage-item h3, .advantage-item p {
+        font-size: 1em; /* Slightly smaller text on mobile */
+    }
+}
+
 .stats-section {
     position: relative;
     text-align: center;
